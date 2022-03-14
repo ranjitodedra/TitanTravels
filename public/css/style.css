@@ -1,0 +1,234 @@
+.img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container-fluid {
+  width: 100;
+  height: 45px;
+  padding: 0px;
+  margin: 0px;
+}
+.navbar-brand {
+  position: absolute;
+  bottom: 600px;
+  left: 20px;
+  font-size: 30px;
+}
+.n1 {
+  align-items: inline;
+  position: absolute;
+  right: 20px;
+  margin-right: 18.5%;
+  bottom: 607px;
+  font-size: 16px;
+}
+.n2 {
+  align-items: inline;
+  position: absolute;
+  right: 20px;
+  margin-right: 12.5%;
+  bottom: 607px;
+  font-size: 16px;
+}
+.n3 {
+  position: absolute;
+  right: 20px;
+  margin-right: 6%;
+  bottom: 607px;
+  font-size: 16px;
+}
+.nav button {
+  position: absolute;
+  border-radius: 10px;
+  right: 20px;
+  bottom: 610px;
+  margin-top: 7px;
+  padding: 1px 14px;
+}
+.n1:hover {
+  transform: scale(1.1);
+}
+.n2:hover {
+  transform: scale(1.1);
+}
+.n3:hover {
+  transform: scale(1.1);
+}
+
+.nav button:hover {
+  transform: scaleX(1.1);
+}
+.block {
+  position: absolute;
+  right: 25%;
+  bottom: 28%;
+  width: 50%;
+  height: 70px;
+  background-color: white;
+  box-shadow: 5px 10px 18px #888888;
+  text-align: center;
+}
+.b1 {
+  color: black;
+  position: absolute;
+  right: 650px;
+  bottom: 5px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline;
+}
+.b2 {
+  color: black;
+  position: absolute;
+  right: 465px;
+  bottom: 5px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline;
+}
+.b3 {
+  color: black;
+  position: absolute;
+  right: 280px;
+  bottom: 5px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline;
+}
+.b4 {
+  color: black;
+  position: absolute;
+  right: 80px;
+  bottom: 5px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline;
+}
+.b1:hover {
+  transform: scale(1.1);
+}
+.b2:hover {
+  transform: scale(1.1);
+}
+.b3:hover {
+  transform: scale(1.1);
+}
+.b4:hover {
+  transform: scale(1.1);
+}
+.trip h3 {
+  text-align: center;
+}
+.trip {
+  background-color: #393957;
+  color: whitesmoke;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 250px;
+}
+.card1 {
+  position: absolute;
+  color: black;
+  left: 5%;
+  top: 900px;
+  border: 1px solid grey;
+}
+.card2 {
+  position: absolute;
+  color: black;
+  left: 29%;
+  top: 900px;
+  border: 1px solid grey;
+}
+.card3 {
+  position: absolute;
+  color: black;
+  left: 52%;
+  top: 900px;
+  border: 1px solid grey;
+}
+.card4 {
+  position: absolute;
+  color: black;
+  left: 76%;
+  top: 900px;
+  border: 1px solid grey;
+}
+.card1:hover {
+  transform: scale(1.1);
+}
+.card2:hover {
+  transform: scale(1.1);
+}
+.card3:hover {
+  transform: scale(1.1);
+}
+.card4:hover {
+  transform: scale(1.1);
+}
+.see {
+  position: absolute;
+  right: 700px;
+  top: 1430px;
+  width: 150px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgb(173, 217, 230);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+}
+.see:hover {
+  transform: scale(1.1);
+}
+.im {
+  background-image: url("https://www.solidbackgrounds.com/images/1920x1080/1920x1080-light-blue-solid-color-background.jpg");
+  height: 250px;
+}
+.help {
+  background-image: url("https://wallpapercave.com/wp/wp3894481.jpg");
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 1550px;
+}
+.fb {
+  position: absolute;
+  top: 75px;
+  right: 1150px;
+  margin: 20px;
+}
+.ig {
+  position: absolute;
+  top: 51px;
+  right: 1180px;
+  margin: 40px;
+}
+.tr {
+  position: absolute;
+  top: 10px;
+  right: 1200px;
+  margin: 80px;
+}
+.cp {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  margin: 20px;
+}
+
+.fb:hover {
+  transform: scale(1.2);
+  transition-timing-function: ease-in-out;
+}
+.ig:hover {
+  transform: scale(1.2);
+  transition-timing-function: ease-in-out;
+}
+.tr:hover {
+  transform: scale(1.2);
+  transition-timing-function: ease-in-out;
+}
