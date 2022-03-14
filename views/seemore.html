@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    {{!--
+    <link rel="stylesheet" href="trip.css" /> --}}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .form {
+            position: absolute;
+            bottom: 150px;
+            right: 550px;
+        }
+
+        .img {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            opacity: 0.9;
+        }
+
+        .container-fluid {
+            width: 100;
+            height: 45px;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .n1 {
+            align-items: inline;
+            position: absolute;
+            right: 20px;
+            margin-right: 18.5%;
+            bottom: 420px;
+            font-size: 16px;
+        }
+
+        .n2 {
+            align-items: inline;
+            position: absolute;
+            right: 20px;
+            margin-right: 12.5%;
+            bottom: 420px;
+            font-size: 16px;
+        }
+
+        .n3 {
+            position: absolute;
+            right: 20px;
+            margin-right: 6%;
+            bottom: 420px;
+            font-size: 16px;
+        }
+
+        .nav button {
+            position: absolute;
+            border-radius: 10px;
+            right: 20px;
+            bottom: 422px;
+            margin-top: 7px;
+            padding: 1px 14px;
+        }
+
+        .n1:hover {
+            transform: scale(1.1);
+        }
+
+        .n2:hover {
+            transform: scale(1.1);
+        }
+
+        .n3:hover {
+            transform: scale(1.1);
+        }
+
+        .nav button:hover {
+            transform: scaleX(1.1);
+        }
+
+        .card1 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            position: absolute;
+            left: 190px;
+            top: 100px;
+        }
+
+        .card1:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container1 {
+            padding: 2px 16px;
+        }
+
+        .card2 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            position: absolute;
+            left: 620px;
+            top: 100px;
+        }
+
+        .card2:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container2 {
+            padding: 2px 16px;
+        }
+
+        .card3 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            position: absolute;
+            right: 190px;
+            top: 100px;
+        }
+
+        .card3:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container3 {
+            padding: 2px 16px;
+        }
+
+        .card4 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            position: absolute;
+            left: 190px;
+            top: 470px;
+        }
+
+        .card4:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container4 {
+            padding: 2px 16px;
+        }
+
+        .card5 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            position: absolute;
+            left: 620px;
+            top: 470px;
+        }
+
+        .card5:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container5 {
+            padding: 2px 16px;
+        }
+
+        .card6 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            position: absolute;
+            right: 190px;
+            top: 470px;
+        }
+
+        .card6:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container6 {
+            padding: 2px 16px;
+        }
+
+        .card7 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            position: absolute;
+            left: 190px;
+            top: 840px;
+        }
+
+        .card7:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container7 {
+            padding: 2px 16px;
+        }
+
+        .card8 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            position: absolute;
+            left: 620px;
+            top: 840px;
+        }
+
+        .card8:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container8 {
+            padding: 2px 16px;
+        }
+
+        .card9 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 300px;
+            position: absolute;
+            right: 190px;
+            top: 840px;
+        }
+
+        .card9:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .container9 {
+            padding: 2px 16px;
+        }
+
+        .back {
+            position: absolute;
+            top: 60px;
+            left: 70px;
+            width: 1380px;
+            height: 1200px;
+            background-color: whitesmoke;
+            opacity: 0.2;
+            border-radius: 20px;
+            box-shadow: 20px 20px 20px 20px black;
+            align-items: center;
+        }
+
+        .ml10 {
+            position: relative;
+            font-weight: 900;
+            font-size: 4em;
+        }
+
+        .ml10 .text-wrapper {
+            position: relative;
+            display: inline-block;
+            padding-top: 0.2em;
+            padding-right: 0.05em;
+            padding-bottom: 0.1em;
+            overflow: hidden;
+        }
+
+        .ml10 .letter {
+            display: inline-block;
+            line-height: 1em;
+            transform-origin: 0 0;
+        }
+
+        .social {
+            background-image: url("https://wallpapercave.com/wp/wp3894481.jpg");
+            width: 100%;
+            height: 250px;
+            position: absolute;
+            top: 1550px;
+        }
+    </style>
+</head>
+
+<title>Trip Packages</title>
+
+<body>
+    <div class="img">
+        <img src="https://ipt.imgix.net/194667/x/0/15-places-in-the-world-that-every-landscape-photographer-has-to-visit-21.jpg?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.3.0&w=883"
+            width="100%" height="400px" />
+        <nav class="navbar navbar-expand-lg navbar-light nav-custom">
+            <div class="container-fluid">
+
+
+                <div class="nav">
+                    <h5 class="n1"><a href="case.html" style="text-decoration: none; color:white;"> Home</a></h5>
+                    <h5 class="n2"><a href="abtus.html" style="text-decoration: none; color:white;"> About us</a></h5>
+                    <h5 class="n3"><a href="cntct.html" style="text-decoration: none; color:white;"> Contact us</a></h5>
+                    <button type="button" class="btn btn-light"><a href="lgin.html"
+                            style="text-decoration: none; color:black;">Login</a></button>
+                </div>
+
+                <div class="back"></div>
+                <div class="card1">
+                    <img src="https://www.worldatlas.com/upload/70/33/ab/shutterstock-115227475.jpg" alt="Avatar"
+                        style="width:100%; height:220px;">
+                    <div class="container1">
+                        <h4><b>Kashmir</b></h4>
+                        <p>Price(Per Person) <i class="fa fa-rupee" style="font-size:16px"></i><b>From
+                                22,515/-</b><br><br>
+                            <a href="https://rzp.io/l/gVat63gFSg"
+                                class="card-link">Book Now</a>
+
+                        </p>
+                    </div>
+                    <div class="card-body" style="position: absolute; right: 60px; bottom: 0px;">
+                        <a href="https://drive.google.com/file/d/15eCM9tY5vPN2egg61KG13Ix9e2zXBBM6/view?usp=sharing"
+                           target="_blank" class="card-link">Explore more</a>
+                    </div>
+                </div>
+                <h1 class="ml10">
+                    <span class="text-wrapper" style="bottom: 250px; right: 200px;color:whitesmoke">
+                        <span class="letters">These Are The Packages We Have!!</span>
+                    </span>
+                </h1>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                <div class="card2">
+                    <img src="https://image3.mouthshut.com/images/imagesp/925591401s.jpg" alt="Avatar"
+                        style="width:100%;height:220px;">
+                    <div class="container2">
+                        <h4><b>Andaman</b></h4>
+                        <p>Price(Per Person) <i class="fa fa-rupee" style="font-size:16px"></i> <b>From
+                                41,243/-</b><br><br>
+                            <a href="https://rzp.io/l/ERSW7N2Z9"
+                                class="card-link">Book Now</a>
+                        </p>
+                    </div>
+                    <div class="card-body" style="position: absolute; right: 60px; bottom: 0px;">
+                        <a href="https://drive.google.com/file/d/1iuHl3kdvKGzJaaghZkjQqvQtaWoxGSRj/view?usp=sharing"
+                            class="card-link">Explore more</a>
+                    </div>
+                </div>
+
+                <div class="card3">
+                    <img src="https://static2.tripoto.com/media/filter/tst/img/2953/TripDocument/5615880929_a407ab7957_b.jpg"
+                        alt="Avatar" style="width:100%;height:220px;">
+                    <div class="container3">
+                        <h4><b>North East</b></h4>
+                        <p>Price(Per Person) <i class="fa fa-rupee" style="font-size:16px"></i> <b>From
+                                15,148/-</b><br><br>
+                            <a href="https://rzp.io/l/4nnUbcEju"
+                                class="card-link">Book Now</a>
+                        </p>
+                    </div>
+                    <div class="card-body" style="position: absolute; right: 60px; bottom: 0px;">
+                        <a href="https://drive.google.com/file/d/1x5defocSUM69bXuQ4GgguskPS4X5N_hk/view?usp=sharing"
+                            class="card-link">Explore more</a>
+                    </div>
+                </div>
+
+                <div class="card4">
+                    <img src="https://eventgurus.co.in/wp-content/uploads/2021/02/c6c2da40-c2b1-11ea-be2f-b860fa9a5e1e.jpg"
+                        alt="Avatar" style="width:100%;height:220px;">
+                    <div class="container4">
+                        <h4><b>Udaipur</b></h4>
+                        <p>Price(Per Person) <i class="fa fa-rupee" style="font-size:16px"></i> <b>From
+                                11,237/-</b><br><br>
+                            <a href="https://rzp.io/l/UNea6ZIYoX"
+                                class="card-link">Book Now</a>
+                        </p>
+                    </div>
+                    <div class="card-body" style="position: absolute; right: 60px; bottom: 0px;">
+                        <a href="https://drive.google.com/file/d/1EAVbmau5vrtG_cvZ4XXiDAHiLC1HTe2g/view?usp=sharing"
+                            class="card-link">Explore more</a>
+                    </div>
+                </div>
+                <div class="card5">
+                    <img src="https://www.india.com/wp-content/uploads/2019/11/Manali.png" alt="Avatar"
+                        style="width:100%;height:220px;">
+                    <div class="container5">
+                        <h4><b>Manali</b></h4>
+                        <p>Price(Per Person) <i class="fa fa-rupee" style="font-size:16px"></i> <b>From
+                                13,437/-</b><br><br>
+                            <a href="https://rzp.io/l/FMnS72qE"
+                                class="card-link">Book Now</a>
+                        </p>
+                    </div>
+                    <div class="card-body" style="position: absolute; right: 60px; bottom: 0px;">
+                        <a href="https://drive.google.com/file/d/1zV8uMC6H_nV7NnPzOg5NLzw6aCbRV6La/view?usp=sharing"
+                            class="card-link">Explore more</a>
+                    </div>
+                </div>
+
+                <div class="card6">
+                    <img src="http://www.archanatravels.com/wp-content/uploads/2019/03/coorg2.jpg" alt="Avatar"
+                        style="width:100%;height:220px;">
+                    <div class="container6">
+                        <h4><b>Coorg</b></h4>
+                        <p>Price(Per Person) <i class="fa fa-rupee" style="font-size:16px"></i> <b>From
+                                12,539/-</b><br><br>
+                            <a href="https://rzp.io/l/kK4eyyWn9"
+                                class="card-link">Book Now</a>
+                        </p>
+                    </div>
+                    <div class="card-body" style="position: absolute; right: 60px; bottom: 0px;">
+                        <a href="https://drive.google.com/file/d/1Ik9sKiaO2_7KFLmSSNPW9VCsXYTpYKHf/view?usp=sharing"
+                            class="card-link">Explore more</a>
+                    </div>
+                </div>
+
+                <div class="card7">
+                    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/02/Meesapulimala-Link-2.jpg"
+                        alt="Avatar" style="width:100%;height:220px;">
+                    <div class="container7">
+                        <h4><b>Munnar</b></h4>
+                        <p>Price(Per Person) <i class="fa fa-rupee" style="font-size:16px"></i><b>From
+                                14,093/-</b><br><br>
+                            <a href="https://rzp.io/l/XZhSZDKdRy"
+                                class="card-link">Book Now</a>
+                        </p>
+                    </div>
+                    <div class="card-body" style="position: absolute; right: 60px; bottom: 0px;">
+                        <a href="https://drive.google.com/file/d/1EqGxe_QYPmd8FuRqUF9lz8vxREVaZWbm/view?usp=sharing"
+                            class="card-link">Explore more</a>
+                    </div>
+                </div>
+                <div class="card8">
+                    <img src="https://images.unsplash.com/photo-1617824077360-7a77db40aae1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGFkYWtofGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                        alt="Avatar" style="width:100%;height:220px;">
+                    <div class="container8">
+                        <h4><b>Ladakh</b></h4>
+                        <p>Price(Per Person) <i class="fa fa-rupee" style="font-size:16px"></i><b> From
+                                21,247/-</b><br><br>
+                            <a href="https://rzp.io/l/YwSf0Y88"
+                                class="card-link">Book Now</a>
+                        </p>
+                    </div>
+                    <div class="card-body" style="position: absolute; right: 60px; bottom: 0px;">
+                        <a href="https://drive.google.com/file/d/10niCYFBtxIFcQfre8OJaE_49YAOOF9nH/view?usp=sharing"
+                            class="card-link">Explore more</a>
+                    </div>
+                </div>
+                <div class="card9">
+                    <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/04/Cover-for-places-to-visit-in-Gujarat-in-Summer.jpg"
+                        alt="Avatar" style="width:100%;height:220px;">
+                    <div class="container8">
+                        <h4><b>Gujarat</b></h4>
+                        <p>Price(Per Person) <i class="fa fa-rupee" style="font-size:16px"></i><b>From
+                                15,363/-</b><br><br>
+                            <a href=" https://rzp.io/l/msMJQyZeZn"
+                                class="card-link">Book Now</a>
+                        </p>
+                    </div>
+                    <div class="card-body" style="position: absolute; right: 60px; bottom: 0px;">
+                        <a href="https://drive.google.com/file/d/10wJi6SCT35i6jefKaJovbYPfeBEesmpU/view?usp=sharing"
+                            class="card-link">Explore more</a>
+                    </div>
+                    {{!-- <div class="social">
+
+                        <a href="https://www.instagram.com/titantravelsofficial/"><i class="fa fa-instagram ig"
+                                style="font-size: 36px; color: white"></i></a>
+                        <a href="https://twitter.com/TitanTravel_web"><i class="fa fa-twitter tr"
+                                style="font-size: 36px; color: white"></i></a>
+                        <i class="fa fa-copyright cp" style="font-size: 25px; color: white">2021 TITAN
+                            TRAVEL<br /><b>India</b><br /><i class="fa fa-envelope"
+                                style="font-size: 24px"></i><b>&nbsp;titantravels.business@gmail.com</b><br>
+                            <a
+                                href=" https://www.facebook.com/Titan-Travels-Official-103375195438248/?ref=pages_you_manage"><i
+                                    class="fa fa-facebook fb" style="font-size: 36px; color:white"></i></a></i>
+                    </div> --}}
+                </div>
+
+            </div>
+            <div class="social">
+
+                <a href="https://www.instagram.com/titantravelsofficial/"><i class="fa fa-instagram ig"
+                        style="font-size: 36px; color: white"></i></a>
+                <a href="https://twitter.com/TitanTravel_web"><i class="fa fa-twitter tr"
+                        style="font-size: 36px; color: white"></i></a>
+                <i class="fa fa-copyright cp" style="font-size: 25px; color: white; padding: 50px;margin-left: 1000px;">2021 TITAN
+                    TRAVEL<br /><b>India</b><br /><i class="fa fa-envelope"
+                        style="font-size: 24px"></i><b>&nbsp;titantravels.business@gmail.com</b><br>
+                    <a href=" https://www.facebook.com/Titan-Travels-Official-103375195438248/?ref=pages_you_manage"><i
+                            class="fa fa-facebook fb" style="font-size: 36px; color:white"></i></a></i>
+            </div>
+    </div>
+
+
+
+
+
+    <script>
+        var textWrapper = document.querySelector('.ml10 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: true })
+            .add({
+                targets: '.ml10 .letter',
+                rotateY: [-90, 0],
+                duration: 1300,
+                delay: (el, i) => 45 * i
+            }).add({
+                targets: '.ml10',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+</head>
+
+</html>

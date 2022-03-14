@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <script>
+        try{
+        const password = req.body.createpassword;
+        const cpassword = req.body.confirmpassword;
+     if(password === cpassword){
+         const registerUser = new Register({
+             firstname: req.body.firstname,
+             lastname: req.body.lastname,
+             email: req.body.email,
+             createpassword: req.body.createpassword,
+             confirmpassword: req.body.confirmpassword,
+         })
+         const registered = await registerUser.save();
+         res.status(201).render("homeAfterLogin");
+     }else{
+         res.send("password is not matching");
+     }
+    }catch(error){
+        res.status(400).send(error);
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
