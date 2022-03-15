@@ -16,6 +16,6 @@ Contact us page
  4. Node Js
 
 We have not hosted this website as we have made this website for learning purpose
-if you want you can use our code for any queries you can mail me..
+if you want you can use our code for any queries you can mail me.
 
 to know more about website watch this video - https://youtu.be/J9OOvnOxiFw 
