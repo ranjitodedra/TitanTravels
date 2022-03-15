@@ -1,5 +1,5 @@
 # TitanTravels Software group Project
-Titan Travel is traveling management website created by me and my classmatesusing MERN technologies.
+Titan Travel is traveling management website created by me and my classmates using MERN technologies.
 Homepage
 ![alt text](https://github.com/ranjitodedra/Test_Repo/blob/2f8efd374a0156fc5e9b8598aca91cce13f80c9a/TITAN%20TRAVEL%20-%20Google%20Chrome%201_23_2022%203_40_27%20PM%20(1).png)
 SignUp page
